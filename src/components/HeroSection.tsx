@@ -1,5 +1,6 @@
-import { Mail, Github, Linkedin, ExternalLink } from 'lucide-react';
+import { Mail, Github, Linkedin } from 'lucide-react';
 import heroBg from '@/assets/hero-bg.jpg';
+import RotatingPulsar from './RotatingPulsar';
 
 const HeroSection = () => {
   return (
@@ -19,7 +20,12 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 py-20 text-center">
-        <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        {/* Rotating Pulsar */}
+        <div className="flex justify-center mb-8 animate-fade-in" style={{ animationDelay: '0.1s' }}>
+          <RotatingPulsar />
+        </div>
+
+        <div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
           <p className="text-primary font-medium tracking-widest uppercase text-sm mb-4">
             PhD Candidate in Radio Astronomy
           </p>

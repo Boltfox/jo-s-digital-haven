@@ -7,12 +7,16 @@ import SkillsSection from '@/components/SkillsSection';
 import MediaSection from '@/components/MediaSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import ParallaxTelescope from '@/components/ParallaxTelescope';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
       {/* Animated Star Background */}
       <StarField />
+      
+      {/* Parallax Radio Telescope */}
+      <ParallaxTelescope />
       
       {/* Navigation */}
       <Navigation />
