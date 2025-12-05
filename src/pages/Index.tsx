@@ -8,12 +8,16 @@ import MediaSection from '@/components/MediaSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import ParallaxTelescope from '@/components/ParallaxTelescope';
+import PulsarSignalWaves from '@/components/PulsarSignalWaves';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
       {/* Animated Star Background */}
       <StarField />
+      
+      {/* Signal waves from pulsar to telescope */}
+      <PulsarSignalWaves />
       
       {/* Parallax Radio Telescope */}
       <ParallaxTelescope />
