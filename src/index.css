@@ -148,7 +148,84 @@
     50% { opacity: 1; }
   }
 
-  @keyframes float {
+@keyframes signal-flow {
+  0% {
+    stroke-dashoffset: 100;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: -100;
+    opacity: 0;
+  }
+}
+
+@keyframes signal-particle {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+@keyframes signal-pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(calc(-50% + 300px), calc(-50% + 350px)) scale(0.3);
+    opacity: 0;
+  }
+}
+
+.animate-signal-flow {
+  animation: signal-flow 2s ease-in-out infinite;
+}
+
+.animate-signal-particle {
+  animation: signal-particle 2.5s ease-in-out infinite;
+}
+
+.animate-signal-pulse {
+  animation: signal-pulse 2s ease-out infinite;
+}
+
+@keyframes signal-incoming {
+  0% {
+    stroke-dashoffset: 20;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    stroke-dashoffset: -20;
+    opacity: 0;
+  }
+}
+
+.animate-signal-incoming {
+  animation: signal-incoming 1.5s ease-in-out infinite;
+}
+
+@keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
   }
