@@ -32,7 +32,7 @@ const HeroSection = () => {
         </div>
         
         <h1 
-          className="font-display text-6xl md:text-8xl lg:text-9xl mb-6 animate-fade-in tracking-wider"
+          className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in"
           style={{ animationDelay: '0.4s' }}
         >
           Jompoj{' '}
@@ -45,8 +45,8 @@ const HeroSection = () => {
           className="animate-fade-in"
           style={{ animationDelay: '0.6s' }}
         >
-          <p className="text-2xl md:text-4xl font-display text-muted-foreground mb-8 tracking-widest">
-            Pulsar Hunter
+          <p className="text-2xl md:text-3xl font-display italic text-muted-foreground mb-8">
+            A Pulsar Hunter
           </p>
         </div>
 
